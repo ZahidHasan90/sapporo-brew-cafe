@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="SAPPORO BREW CAFEのお問い合わせページです。">
+    <title>お問い合わせ | SAPPORO BREW CAFE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index_web.html" class="brand">
+                <span class="brand-icon">☕</span>
+                <span>SAPPORO <strong>BREW</strong></span>
+            </a>
+
+            <nav class="nav-links" aria-label="メインメニュー">
+                <a href="index_web.html">ホーム</a>
+                <a href="about.html">私たちについて</a>
+                <a href="menu.html">メニュー</a>
+                <a href="shops.html">店舗案内</a>
+                <a href="contact.html" class="active">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <span class="hero-label">GET IN TOUCH</span>
+            <h1>お問い合わせ</h1>
+            <p>皆さまからのご質問やご意見をお待ちしています。</p>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- Contact Introduction -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">CONTACT US</span>
+                    <h2>お気軽にお問い合わせください。</h2>
+                    <p class="section-lead">
+                        店舗やメニューについてのご質問など、
+                        こちらのフォームをご利用ください。
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card">
+                        <h3>お問い合わせフォーム</h3>
+
+                        <p class="form-intro">
+                            以下の項目をご入力ください。
+                        </p>
+
+                        <form id="contact-form">
+
+                            <div class="form-group">
+                                <label for="name">
+                                    お名前
+                                    <span class="required">必須</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="例：山田 太郎"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    メールアドレス
+                                    <span class="required">必須</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@example.com"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">
+                                    お問い合わせ内容
+                                    <span class="required">必須</span>
+                                </label>
+                                <select id="subject"
+                                        name="subject"
+                                        required>
+                                    <option value="">
+                                        選択してください
+                                    </option>
+                                    <option value="menu">
+                                        メニューについて
+                                    </option>
+                                    <option value="shop">
+                                        店舗について
+                                    </option>
+                                    <option value="service">
+                                        サービスについて
+                                    </option>
+                                    <option value="other">
+                                        その他
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">
+                                    メッセージ
+                                    <span class="required">必須</span>
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="お問い合わせ内容をご入力ください。"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <label>
+                                    <input type="checkbox" required>
+                                    入力内容を確認しました。
+                                </label>
+                            </div>
+
+                            <button type="submit"
+                                    class="btn btn-dark submit-btn">
+                                入力内容を確認する
+                            </button>
+
+                            <p class="form-notice">
+                                ※このフォームは学習用のデモです。
+                                実際の送信は行われません。
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Contact Information -->
+                    <aside class="contact-info-card">
+
+                        <span class="eyebrow">INFORMATION</span>
+                        <h3>店舗について</h3>
+
+                        <div class="info-block">
+                            <h4>所在地</h4>
+                            <p>
+                                北海道札幌市内<br>
+                                ※架空の店舗です。
+                            </p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>営業時間</h4>
+                            <p>
+                                店舗によって異なります。<br>
+                                詳しくは店舗案内をご覧ください。
+                            </p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>運営情報</h4>
+                            <p>
+                                SAPPORO BREW CAFE<br>
+                                Web技術基礎 学習用サイト
+                            </p>
+                        </div>
+
+                        <div class="contact-info-action">
+                            <a href="shops.html"
+                               class="btn btn-primary">
+                                店舗案内を見る
+                            </a>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section menu-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>よくあるご質問</h2>
+                </div>
+
+                <div class="faq-list">
+
+                    <details class="faq-item">
+                        <summary>営業時間を教えてください。</summary>
+                        <p>
+                            営業時間は店舗によって異なります。
+                            店舗案内ページをご確認ください。
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>テイクアウトはできますか？</summary>
+                        <p>
+                            お持ち帰り可能なドリンクや
+                            フードをご用意している設定です。
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>メニューはどこで確認できますか？</summary>
+                        <p>
+                            メニューページでドリンクや
+                            スイーツをご覧いただけます。
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Home -->
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">THANK YOU</span>
+                    <h2>ご覧いただきありがとうございます。</h2>
+                    <p class="section-lead">
+                        またのご訪問をお待ちしています。
+                    </p>
+
+                    <div class="section-action">
+                        <a href="index_web.html"
+                           class="btn btn-dark">
+                            ホームに戻る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <h3>SAPPORO BREW CAFE</h3>
+                    <p>
+                        Coffee, Comfort & Community.<br>
+                        札幌から、心あたたまる一杯を。
+                    </p>
+                </div>
+
+                <div>
+                    <h4>MENU</h4>
+                    <a href="index_web.html">ホーム</a>
+                    <a href="about.html">私たちについて</a>
+                    <a href="menu.html">メニュー</a>
+                </div>
+
+                <div>
+                    <h4>INFORMATION</h4>
+                    <a href="shops.html">店舗案内</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SAPPORO BREW CAFE.</p>
+                <p>Web技術基礎・学習用の架空サイト</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Demo form: no information is transmitted -->
+    <script>
+        document.getElementById("contact-form")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("入力内容を確認しました。\n"
+                    + "このサイトは学習用のため、"
+                    + "実際の送信は行われません。");
+            });
+    </script>
+
+</body>
+</html>
